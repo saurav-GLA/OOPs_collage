@@ -1,0 +1,56 @@
+Operators 
+  +  Addition
+  =  isEquals to
+  -  Subtraction
+  *  Multiply(Astarics)
+  /  Division
+  %  Modulas
+
+Unary Operators
+  x++
+  ++x
+  x--
+  --x
+
+Example
+int x = 10;
+int y = x++; // y = x first then x is increament
+syso(y); // Output = 11
+syso(x); // Output = 12
+
+int x = 10;
+int y = ++x; // x = x+1 first then y = x is increament
+syso(x); // Output = 12
+syso(y); // Output = 12
+
+int x = 11;
+int y = x++ + 4 + ++x;
+syso(y); // Output = 28 (11 + 4 + 13)
+syso(x); //Output = 13
+
+int x = 2;
+int y = x++ + 4 + ++x + x++;
+syso(y); // Output = 14 (2 + 4 + 4 + 4)
+syso(x); //Output = 4
+
+int x = 2;
+int y = ++x + 4 + ++x + ++x;
+syso(y); // Output = 16 (3 + 4 + 4 + 5)
+syso(x); //Output = 5
+
+int x = 2;
+int y = 0;
+y = x++ +2 + ++x +1 + x++ +2 + ++x;
+syso(y); //Output = 21 (2 + 2 + 4 + 1 + 4 + 2 + 6)
+syso(x); //Output = 6
+
+int x = 2;
+int y = 0;
+y = y-- +2 + ++x +1 + --x +2 + ++x;
+syso(y); //Output = 12 (0 + 2 + 3 + 1 + 2 + 2 + 3)-1
+syso(x); //Output = 3
+
+int x = 2;
+int y = 0;
+syso(x++); //Output = 2 
+syso(x); //Output = 3
