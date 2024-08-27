@@ -1,0 +1,231 @@
+1. Create a program that converts temperatures between Celsius and Fahrenheit based on user input using switch-case.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Celcius : ");
+        float Celcius = sc.nextFloat();
+        float fahrenheit = (Celcius * 9)/5 + 32;
+        System.out.println("Fahrenheit = " + fahrenheit);
+    }
+}
+
+
+
+
+2. Write a program that checks if a number is divisible by both 5 and 11.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int num = sc.nextInt();
+        boolean from5 = false;
+        boolean from11 = false;
+        if(num % 5 == 0){
+            from5 = true;
+        }if(num%11 == 0){
+            from11 = true;
+        }
+        if(from11 == true && from5 == true){
+            System.out.println("Divisivle from both 5 and 11");
+        }else if(from11 == true && from5 == false){
+            System.out.println("Divisible from 11 and not divisible from 5");
+        }else if(from11 == false && from5 == true){
+            System.out.println("Divisible from 5 and not divisible from 11");
+        }else{            
+            System.out.println("Not divisible from 11 and 5");
+        }
+    }
+}
+
+
+
+
+3. Create a program that allows the user to calculate the area of a circle, rectangle, or triangle based on their choice using switch-case.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter T for Triangel and R for Rectengle and C for Circle : ");
+        String shape = sc.next();
+        switch (shape) {
+            case "T":
+                System.out.print("Base : ");
+                int base = sc.nextInt();
+                System.out.print("Height : ");
+                int height = sc.nextInt();
+                float Area = (float)((0.5) * base * height);
+                System.out.println("Area = " + Area);
+                break;
+            case "R":
+                System.out.print("Length : ");
+                int Length = sc.nextInt();
+                System.out.print("Breadth : ");
+                int Breadth = sc.nextInt();
+                Area = Length * Breadth;
+                System.out.println("Area = " + Area);                
+                break;
+            case "C":
+                System.out.print("Radius : ");
+                float Radius = sc.nextFloat();            
+                float Area1 = (float) (Math.PI * Radius *Radius);
+                System.out.println("Area = " + Area1);                
+                break;
+            default:
+                System.out.println("Wrong Input");
+                break;
+        }
+    }
+}
+
+
+
+4. Write a program to check whether a given year is a leap year or not using if-else statements.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter year : ");
+        int year = sc.nextInt();
+        if(year % 400 == 0){
+            System.out.println("Leap Year");
+        }else if(year % 100 == 0){
+            System.out.println("Not a Leap Year");
+        }else if(year % 4 == 0){
+            System.out.println("Leap Year");
+        }else{
+            System.out.println("Not a Leap Year");
+        }
+    }
+}
+
+
+
+5. Write a program to calculate simple interest based on user input for principal, rate, and time. Also, if the interest exceeds 5000, display a warning message.
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Principle Amount : ");
+        int P = sc.nextInt();
+        System.out.print("Rate of Intrest : ");
+        float R = sc.nextFloat();
+        System.out.print("Enter time(Years) : ");
+        int T = sc.nextInt();
+        float SI = (float)((P*R*T)/100);
+        if(SI > 5000){
+            System.out.println("Warning !!");
+            System.out.println("Simple Intrest = " + SI);
+        }else{
+            System.out.println("Simple Intrest = " + SI);
+        }
+    }
+}
+
+
+6. Write a program that checks whether a given character is a vowel or a consonant using a switch-case statement.
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Character(small alphabates) : ");
+        String chr = sc.next();
+        
+        switch (chr) {
+            case "a":
+                System.out.println("Vowel");
+                break;
+            case "e":
+                System.out.println("Vowel");
+                break;
+            case "i":
+                System.out.println("Vowel");
+                break;
+            case "o":
+                System.out.println("Vowel");
+                break;
+            case "u":
+                System.out.println("Vowel");
+                break;
+        
+            default:
+                System.out.println("not vowel");
+                break;
+        }
+        
+        
+    }
+
+}
+
+
+7. Write a program that takes an integer as input and checks whether it is positive, negative, or zero using if-else statements.
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+        
+        if(num == 0){
+            System.out.println("Zero");
+        }else if(num > 0){
+            System.out.println("Positive");
+        }else{
+            System.out.println("Negative");
+        }
+        
+        
+    }
+
+}
+
+
+8. Write a Java program to find the greatest of three numbers without using if-else or switch-case statements.
+9. Determine if a given number is a perfect square.
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+        boolean isPS = false;
+        int i= 0;
+        while((i*i)<= num){
+            i++;
+            if(num == (i*i)){
+                isPS = true;
+            }
+        }
+        if(isPS == true){
+            System.out.println("is Perfect Square");
+        }else{
+            System.out.println("Is not a Perfect square");
+        }
+
+        
+        
+    }
+
+}
