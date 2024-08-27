@@ -1,0 +1,60 @@
+1. Create a program that converts temperatures between Celsius and Fahrenheit based on user input using switch-case.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Celcius : ");
+        float Celcius = sc.nextFloat();
+        float fahrenheit = (Celcius * 9)/5 + 32;
+        System.out.println("Fahrenheit = " + fahrenheit);
+    }
+}
+
+
+
+
+2. Write a program that checks if a number is divisible by both 5 and 11.
+
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int num = sc.nextInt();
+        boolean from5 = false;
+        boolean from11 = false;
+        if(num % 5 == 0){
+            from5 = true;
+        }if(num%11 == 0){
+            from11 = true;
+        }
+        if(from11 == true && from5 == true){
+            System.out.println("Divisivle from both 5 and 11");
+        }else if(from11 == true && from5 == false){
+            System.out.println("Divisible from 11 and not divisible from 5");
+        }else if(from11 == false && from5 == true){
+            System.out.println("Divisible from 5 and not divisible from 11");
+        }else{            
+            System.out.println("Not divisible from 11 and 5");
+        }
+    }
+}
+
+
+
+
+3. Create a program that allows the user to calculate the area of a circle, rectangle, or triangle based on their choice using switch-case.
+
+
+
+4. Write a program to check whether a given year is a leap year or not using if-else statements.
+5. Write a program to calculate simple interest based on user input for principal, rate, and time. Also, if the interest exceeds 5000, display a warning message.
+6. Write a program that checks whether a given character is a vowel or a consonant using a switch-case statement.
+7. Write a program that takes an integer as input and checks whether it is positive, negative, or zero using if-else statements.
+8. Write a Java program to find the greatest of three numbers without using if-else or switch-case statements.
+9. Determine if a given number is a perfect square.
