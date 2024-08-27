@@ -201,6 +201,30 @@ public class temp1 {
 
 
 8. Write a Java program to find the greatest of three numbers without using if-else or switch-case statements.
+
+import java.util.*;
+
+public class temp1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first Number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter second Number: ");
+        int num2 = sc.nextInt();
+        System.out.print("Enter third Number: ");
+        int num3 = sc.nextInt();
+        boolean num_1 = (num1 >= num2) && (num1 >= num3);
+        boolean num_2 = (num1 <= num2) && (num2 >= num3);
+        boolean num_3 = (num3 >= num2) && (num1 <= num3);
+
+        System.out.println("First Number is Greatest : " + num_1);
+        System.out.println("Second Number is Greatest : " + num_2);
+        System.out.println("Thirty Number is Greatest : " + num_3);
+    }
+
+}
+
+
 9. Determine if a given number is a perfect square.
 
 import java.util.*;
