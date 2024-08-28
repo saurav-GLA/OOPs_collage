@@ -1,0 +1,121 @@
+switch (args) {        // This is Switch case  "{" Is called the scope "}"
+            case value:
+                
+                break;
+        
+            default:
+                break;
+}
+
+
+
+int x = 1;
+
+switch (x) {
+            case 1:
+                System.out.println("1");
+            case 2:
+                System.out.println("2");
+            case 3:
+                System.out.println("3");
+            default:
+                break;
+        }
+
+
+        //Output
+        1
+        2
+        3
+
+
+switch (x) {
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            default:
+                break;
+        }
+
+
+        //Output
+        1
+        2
+        3
+
+
+
+Ques : Do + or - with switch case by taking input from user?
+
+
+
+Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Plus(+) or Minus(-) : ");
+        String sign = sc.next();
+        int x = 2;
+        int y = 3;
+        
+        switch (sign) {
+            case "+":
+                System.out.println("Plus = " + (x+y));
+                break;
+            case "-":                                            // even if we don't put break in last case then also it's fine 
+                System.out.println("Minus = " + (x-y));
+                break;
+        }
+
+
+        //Output 
+        if sign = +
+          output = 5
+        if sign = -
+          output = -1
+
+
+
+use for loop to find sum of all even numbers till n
+        int n = 10;
+        int sum = 0; 
+        for(int i = 0; i<=n; i+=2){
+            sum += i;
+        }
+        System.out.println(sum);
+
+
+        //Output 
+        30      //(2+4+6+8+10)
+use for loop to find sum of all even numbers till n
+
+int n = 10;
+        int sum = 0; 
+        for(int i = 1; i<=n; i+=2){
+            sum += i;
+        }
+        System.out.println(sum);
+
+
+        //Output 
+        25      //(1+3+5+7+9)
+
+
+
+Decode 
+2
+8
+14
+20
+13
+
+
+Oh sorry 
+
+2
+8
+14
+20
