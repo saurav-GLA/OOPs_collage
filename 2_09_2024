@@ -1,0 +1,44 @@
+int n = 123;
+int n2 = 0;
+while(n != 0){
+  n2 = (n2 * 10) + (n % 10);
+  n /= 10;
+}
+//Output
+321
+
+Reverse a number
+        int n1 = 321;
+        int m = 0;
+        for(int n = 234;n != 0;n/=10){
+            int d = n%10;
+            m = (m*10) + d;
+        }System.out.println(m);
+        while(n1 != 0){
+            m = m * 10 + n1 % 10;
+            n1 = n1/10;
+        }System.out.println(m);
+
+
+
+Count Digits
+        int n1 = 321;
+        int m = 0;
+        while(n1 != 0){
+            m++;
+            n1 = n1/10;
+        }System.out.println(m);
+
+
+Count number of ones
+        int n1 = 13121;
+        int m = 0;
+        while(n1 != 0){
+            int d = n1 % 10;
+            if(d == 1)
+                m++;
+            n1 = n1/10;
+        }System.out.println(m);
+
+        //Output
+        3
