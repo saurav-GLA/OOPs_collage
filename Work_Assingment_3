@@ -1,0 +1,231 @@
+Question 1:
+Sum of Natural Numbers:
+        int j = 5;
+        int k = j*(j+1)/2;
+        System.out.println(k);
+
+        //Output
+        15
+
+
+
+Question 2:
+Print Multiplication Table:
+        int n = 4;
+        for(int i = 1; i<=10; i++){
+            System.out.println(n + " X " + i + " = " + n*i) ;
+        }
+
+//Output
+4 X 1 = 4
+4 X 2 = 8
+4 X 3 = 12
+4 X 4 = 16
+4 X 5 = 20
+4 X 6 = 24
+4 X 7 = 28
+4 X 8 = 32
+4 X 9 = 36
+4 X 10 = 40
+
+
+Question 3:
+Factorial of a Number:
+        int j = 4; 
+        int fact = 1;
+        for(int i = 1; i<=j; i++){
+            fact = fact * i;
+        }System.out.println(fact);
+//Output
+24
+
+
+Question 4:
+Reverse a Number:
+        int n = 5208;
+        int n2 = 0;
+        while(n>0){
+            n2 = n2*10 + n%10;
+            n /= 10;
+        }System.out.println(n2);
+
+//Output
+8025
+
+
+
+Question 5:
+Count Digits in a Number:
+        int n = 17382;
+        int m = 0;
+        while(n>0){
+            m++;
+            n /= 10;
+        }System.out.println(m);
+
+//Output
+5
+
+
+
+Question 6:
+Sum of Even and Odd Numbers:
+        int n = 8;
+        int even = 0;
+        int odd = 0;
+        for(int i = 1; i<=n; i++){
+            if(i % 2 == 0){
+                even += i;
+            }else{
+                odd += i;
+            }
+        }
+        System.out.println("Even = " + even);
+        System.out.println("Odd = " + odd);
+
+//Output
+Even = 20
+Odd = 16
+
+
+
+Question 7:
+Prime Numbers Up to n:
+        int n = 11;
+        for(int i = 2; i<=n; i++){
+            int count = 0;
+            for(int j =1; j<=i/2; j++){
+                if(i%j == 0){
+                    count++;
+                }
+            }
+            if(count == 1){
+                System.out.println(i);
+            }
+        }
+
+//Output
+2
+3
+5
+7
+11
+
+Question 8:
+Check for Palindrome Number:
+        int n = 1211;
+        int j = 0;
+        int temp = n;
+        while(n != 0){
+            j = j*10 + n%10;
+            n /= 10;
+        }
+        if(temp == j){
+            System.out.println("Pelindrome");
+        }else{
+            System.out.println("Not Pelindrome");
+        }
+//Output
+Pelindrome
+
+        int n = 121;
+        int j = 0;
+        int temp = n;
+        while(n != 0){
+            j = j*10 + n%10;
+            n /= 10;
+        }
+        if(temp == j){
+            System.out.println("Pelindrome");
+        }else{
+            System.out.println("Not Pelindrome");
+        }
+
+//Output
+Pelindrome
+
+Question 9:
+Armstrong Number:
+        int n = 153;
+        int j = 0;
+        int temp = n;
+        while(n != 0){
+            j = (int) (j+Math.pow(n%10, 3));
+            n /= 10;
+        }
+        if(temp == j){
+            System.out.println("Armstrong");
+        }else{
+            System.out.println("Not Armstrong");
+        }
+//Output
+Armstrong
+
+
+        int n = 154;
+        int j = 0;
+        int temp = n;
+        while(n != 0){
+            j = (int) (j+Math.pow(n%10, 3));
+            n /= 10;
+        }
+        if(temp == j){
+            System.out.println("Armstrong");
+        }else{
+            System.out.println("Not Armstrong");
+        }
+//Output
+Not Armstrong
+
+Question 10:
+Sum of Digits in a Number:
+
+        int sumOfDigits = 0;
+        int n = 375;
+        while(n != 0){
+            sumOfDigits += n%10;
+            n /= 10;
+        }System.out.println(sumOfDigits);
+//Output
+15
+
+Question 11:
+Count Occurrences of a Digit in a Number:
+
+        int search = 3;
+        int n = 12354835;
+        int times = 0;
+        while(n != 0){
+            int m = n % 10;
+            if( m == search){
+                times++;
+            }
+            n /= 10;
+        }System.out.println(times);
+
+//Output
+2
+
+Question 12:
+Generate the First n Terms of the Fibonacci Sequence:
+        int n = 10;
+        int a = 0;
+        int b = 1;
+        for(int i = 0; i< n; i++){
+            System.out.println(a);
+            int temp = a;
+            a = b;
+            b += temp;
+        }
+
+Output
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
