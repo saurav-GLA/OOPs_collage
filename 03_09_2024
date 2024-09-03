@@ -6,5 +6,7 @@ check if perfect square
                 perfectSq = true;
             }
         }
-        if(perfectSq == true) 
-        System.out.println(true);
+        if(perfectSq == true) System.out.println("perfect square");
+        else if(perfectSq == false) System.out.println("not perfect square");
+
+Basics questions over
