@@ -1,0 +1,10 @@
+check if perfect square
+        int n = 9;
+        boolean perfectSq = false;
+        for(int i = 0; i<=n/2; i++){
+            if(i*i == n){
+                perfectSq = true;
+            }
+        }
+        if(perfectSq == true) 
+        System.out.println(true);
