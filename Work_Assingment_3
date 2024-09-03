@@ -207,15 +207,18 @@ Count Occurrences of a Digit in a Number:
 2
 
 Question 12:
-Generate the First n Terms of the Fibonacci Sequence:
+Generate the First n Terms of the Tribonacci Sequence:
         int n = 10;
         int a = 0;
         int b = 1;
+        int c = 1;
         for(int i = 0; i< n; i++){
             System.out.println(a);
             int temp = a;
+            int temp1 = b;
             a = b;
-            b += temp;
+            b = c;
+            c += (temp + temp1);
         }
 
 Output
@@ -229,3 +232,31 @@ Output
 13
 21
 34
+
+
+
+Question 13:
+Generate if number is perfect square without using math function
+        int n = 9;
+        boolean perfectSq = false;
+        for(int i = 0; i<=n/2; i++){
+            if(i*i == n){
+                perfectSq = true;
+            }
+        }
+        if(perfectSq == true) System.out.println("perfect square");
+        else if(perfectSq == false) System.out.println("not perfect square");
+
+
+
+Question 14:
+check if a number is Harshad Number
+        int n = 18;
+        int temp = n;
+        int sum = 0;
+        while(n>0){
+            sum += n%10;
+            n /= 10;
+        }
+        if(temp%sum == 0) System.out.println("Harshad Number");
+        else System.out.println("not Harshad Number");
