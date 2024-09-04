@@ -1,0 +1,158 @@
+Function
+public class temp1 {
+    public static void main(String[] args) {
+        agar();
+    }
+    public static void agar(){
+        System.out.println("a");
+    }
+}
+
+//Output
+a
+
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        agar();
+    }
+    public static int agar(){
+        System.out.println("a");
+
+      return a;
+    }
+}
+
+//Output
+Error(because a is not defined)
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        agar();
+    }
+    public static int agar(){
+        int a = 0
+        System.out.println("a");
+        return a;
+    }
+}
+
+//Output
+a
+
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        System.out.println(agar());
+    }
+    public static int agar(){
+        int a = 0;
+        System.out.println("a");
+        return a;
+    }
+}
+
+//Output
+a
+0
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        System.out.println(agar());
+    }
+    public static String agar(){
+        int a = 0;
+        System.out.println("a");
+        return a;
+    }
+}
+
+//Output
+Error(because function is of String type and we are returning int)
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        int a = agar();
+        System.out.println(a);
+    }
+    public static String agar(){
+        int a = 0;
+        System.out.println("a");
+        return "a";
+    }
+}
+
+
+//Output
+Error (because we are storing a value agar in int type variable but functin is of String type)
+
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        System.out.println(agar());
+    }
+    public static int agar(){
+        int a = 0;
+        System.out.println("a");
+        return a;
+    }
+}
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        System.out.println(agar(4,5)); // 4,5 are arguements
+    }
+    public static int agar(int a, int b){ //Parameters
+        
+        System.out.println("a");
+        return a+b;
+    }
+}
+
+//Output
+9
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        agar(4,5);
+    }
+    public static int agar(int a, int b){
+        
+        System.out.println("a");
+        return a+b;
+    }
+}
+//Output
+a
+
+
+
+public class temp1 {
+    public static void main(String[] args) {
+        System.out.println(agar());
+    }
+    public static int agar(int a, int b){
+        
+        System.out.println("a");
+        return a+b;
+    }
+}
+
+//Output
+Error
+agar arguements not passed not passed
+
+
+
+
+
+
+
