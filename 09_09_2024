@@ -1,0 +1,171 @@
+Public static void SecV(){
+
+}
+Public ==> Access Modifiers
+static ==> non Access Modifiers
+void ==> Return Type
+SevV ==> Name
+
+public class temp1 {
+    public static void main(String[] args){
+        tony();
+    }public static void tony(){
+        System.out.println("Stark");
+    }
+
+}
+
+Whenever we call function we call them by name i.e. tony()
+
+
+//You can only return values only when it not of void type, void only print values
+public class temp1 {
+    public static void main(String[] args){
+        tony();
+    }public static void tony(){
+        System.out.println("Stark");
+        return 1;
+    }
+
+}
+
+
+
+to return certain value function has to be of that type
+public class temp1 {
+    public static void main(String[] args){
+        int i = tony();
+    }public static int tony(){
+        System.out.println("Stark");
+        return 1;
+    }
+
+}
+
+
+
+public class temp1 {
+    public static void main(String[] args){
+        String i = tony();
+        System.out.println(i);
+    }public static String tony(){
+        System.out.println("Stark");
+        return "1";
+    }
+
+}
+
+// Output
+Stark 
+1
+
+
+public class temp1 {
+    public static void main(String[] args){
+        tony();
+        System.out.println(tony());
+    }public static String tony(){
+        System.out.println("Stark");
+        return "123";
+    }
+
+}
+
+//Output
+Stark
+Stark
+123
+
+
+public class temp1 {
+    public static void main(String[] args){
+        System.out.println("Tony");
+        tony();
+        System.out.println("Tony");
+        System.out.println(tony());
+    }public static String tony(){
+        System.out.println("Stark");
+        return "123";
+    }
+
+}
+
+//Output
+Tony
+Stark
+Tony
+Stark
+123
+
+
+
+
+Tony(int a, int b) //Parameters
+
+main{
+    Tony(5,6);  //Arguements
+}
+
+
+public class temp1 {
+    public static void main(String[] args){
+        tony();  ///Error because no arguements is passed
+        System.out.println(tony(4, 5));
+    }public static String tony(int x, int y){
+        System.out.println("Stark");
+        return "123";
+    }
+
+}
+
+
+public class temp1 {
+    public static void main(String[] args){
+        tony(x,y);
+        System.out.println(tony(4, 5));
+    }public static int tony(int x, int y){
+        System.out.println("Stark");
+        return x+y;
+    }
+
+}
+
+
+
+//Output
+Stark
+Stark 
+9
+
+
+
+Array ==> Set of same data types of fixed length
+Allocate continous Memory location for same type of data type like({int, int, int, int} or {char, char, char, char} or  {String, String, String, String}
+
+int = 4 byte
+
+
+|_____|_____|_____|_____|
+100    104   108  112
+
+
+char = 2 bytes
+|_____|_____|_____|______|______|
+1000   1002  1004  1006   1008
+
+
+
+
+ ___________________________
+|             |              |
+|     100Mb   |    20Mb      |
+|       int   |    short     |
+|_____________ ______________|              
+|             |              |
+|   100Mb     |    10Mb      |
+|   String    |     char     |
+|             |              |
+______________________________
+Linked is connected to many data types like this
+
+Linked list can change it's size because it's memory is dynamic
