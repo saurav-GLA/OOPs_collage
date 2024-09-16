@@ -1,0 +1,38 @@
+find idx at which key is found
+        
+        int key = 4;
+        int idx = -1;
+        int arr[] = {1,3,7,8,4};
+        int n = arr.length;
+        for(int i = 0; i< n;i++){
+            if(arr[i] == key){
+                idx = i;
+                break;
+            }
+        }
+        if(idx != -1){
+            System.out.println("Key found at index " + idx );
+        }else{
+            System.out.println("Key not found");
+        }
+
+
+        int key = 4;
+        int flag = 0;
+        int arr[] = {1,3,7,8,4};
+        int n = arr.length;
+        for(int i = 0; i< n;i++){
+            if(arr[i] == key){
+                flag = 1;
+                break;
+            }
+        }
+        if(flag != 0){
+            System.out.println("Key found");
+        }else{
+            System.out.println("Key not found");
+        }
+
+
+
+PATTERN
