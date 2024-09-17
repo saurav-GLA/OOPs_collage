@@ -113,3 +113,10 @@ Ans - Everything will print horizontally
                     System.out.print("  ");
             }System.out.println();
         }
+
+
+Homework
+        *
+      * * *
+    * * * * *
+   * * * * * * *
