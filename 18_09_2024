@@ -1,0 +1,116 @@
+Given a string 
+string = "Sanjay Datt"
+s = 'a';
+find the first occurance of a and print index
+
+      String s = "Sanjay Datt";
+        char s2 = 'a';
+        int flag = 0;
+        for(int i = 0; i<s.length(); i++){
+            int a = s.charAt(i);
+            if(a == s2){
+                System.out.println("Index = " + i);
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            System.out.println(s2 + " not found in " + s);
+        }
+
+
+        //Output
+        Index = 4
+
+
+
+
+
+Two types of data types
+1. Primitive 
+2. Reference
+                    ________
+int s1 = "Tony;    | Tony   | 500  
+                   | _______|
+
+
+int s2 = s1;     s1 = 500  
+                 s2 = 500
+s1 and s2 both are storing the address of Tony not the string Tony 
+and both s1 and s2 are refering to the address where Tony is saved
+Therefore String is reference Data Type
+
+
+
+if we create s3 = "Tony";
+then also it is pointing to same tony stored at 500
+but if s3 = "Stark"
+then  Stark will be saved into new address
+lets say Stark is stored at 600
+then s3 will be 600 that means it is pointing towards Stark which is saved at address 600
+
+
+
+
+s1 = "Tony"
+s2 = "Tony"
+if(s1 == s2) // True
+
+
+
+
+
+but if we say 
+s1 = new String("Tony");
+s2 = "Tony";
+if(s1 == (s2)) //False
+because s1 is stored in new location and s2 is not pointing towards it
+both stored value in diffrent places
+
+
+
+
+
+
+if you want correct answer while comparing string it is preffered to use .equals()
+like
+if(s1.equals(s2))  //True
+
+What will if we try to print
+System.out.println("My name is " + 96); // It will not give Error
+it will give  // Output
+                My name is 96
+
+
+
+
+
+         String s2 = "Hello World";
+        int c = s2.lastIndexOf('a');
+        //Give first occurace of a from last
+
+
+
+
+
+
+.toUpperCase, toLowerCase
+        String s2 = "Hello World";
+        System.out.println(s2);
+        String newS = s2.toUpperCase();
+        System.out.println(newS);
+//Output
+Hello World
+HELLO WORLD
+
+       
+        
+        String s2 = "Hello World";
+        System.out.println(s2);
+        String newS = s2.toLowerCase();
+        System.out.println(newS);
+//Output
+Hello World
+hello world
+
+
