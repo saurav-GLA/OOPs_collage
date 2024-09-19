@@ -1,0 +1,94 @@
+Print yes if char ch is in String str else print no
+
+        String str = "Tony Stark";
+        char ch = 'a';
+        int flag = 0;
+        for(int i = 0; i<str.length(); i++){
+            char a = str.charAt(i);
+            if(a == ch){
+                System.err.println("Yes");
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            System.out.println("No");
+        }
+
+
+
+do .indexOf without .indexOf
+        String str = "abdeA";
+        char ch = 'c';
+        int flag = 0;
+        for(int i = 0; i<str.length(); i++){
+            if(str.charAt(i) == ch){
+                System.out.println(i);
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            System.out.println(-1);
+        }
+
+reverse a string
+        String str = "Tony Stark";
+        int n = str.length();
+        String rev = "";
+        for(int i = n-1; i>=0; i--){
+            rev = rev + str.charAt(i);
+        }
+        System.err.println(rev);
+
+
+
+check Pelindrome
+        String str = "aba";
+        int n = str.length();
+        String rev = "";
+        for(int i = n-1; i>=0; i--){
+            rev = rev + str.charAt(i);
+        }
+        if(str.equals(rev)){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not Palindrome");
+        }
+
+
+
+there is 20 pages in a book and a kid and and tore 1 page from the book identify the tore page
+
+    public int missingPage(int[] nums) {
+        int n = nums.length;
+        int sum = (int)((n*(n+1))/2);
+        int sum1 = 0;
+        for(int i = 0; i<nums.length; i++){
+            sum1 += nums[i];
+        }
+        return sum-sum1;
+    }
+Find the number of vowels in a string
+
+        String str = "abcdiomn";
+        int n = str.length();
+        int count = 0;
+        for(int i = n-1; i>=0; i--){
+            int a = str.charAt(i);
+            if(a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u'){
+                count++;
+            }
+        }
+        System.out.println("Number of Vowel = " + count);
+
+
+convert String to array;(Homework)
+        String str = "abcdiomn";
+        int n = str.length();
+        char arr[] = new char[n];
+        for(int i = 0; i<n; i++){
+            char a = str.charAt(i);
+            arr[i] = a;
+        }
+
