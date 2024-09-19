@@ -1,0 +1,55 @@
+1. Write a Java Program to Find the Sum of All Elements in an Array
+    
+    public static void arraySum(int num[]){
+        int sum = 0;
+        for(int i = 0; i<num.length; i++){
+            sum += num[i];
+        }
+        System.out.println("Sum of Array : " + sum);
+    }
+
+
+2. Write a Java Program to Find the Maximum Element in an Array
+
+    public static void maxElement(int num[]){
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i<num.length; i++){
+            if(num[i] >max){
+                max = num[i];
+            }
+        }
+        System.out.println("Max Element of Array : " + max);
+    }
+
+
+Write a Java Program to Count the Occurrences of a Specific Element in an Array
+
+
+Write a Java Program to Reverse an Array
+
+Write a Java Program to Find the Smallest Element in an Array
+
+Write a Java Program to Find the Average of All Elements in an Array
+
+
+
+
+
+Write a Java Program to Find the Index of a Specific Element in an Array
+
+
+Write a Java Program to Merge Two Arrays
+
+
+Write a Java Program to Find All Even Numbers in an Array
+
+
+Write a Java Program to change  a Specific Element from an Array
+•	Write a Java program that takes an array of integers and a target element, and chage all occurrences of that element from the array. Print the modified array.
+ Sample :  k = 3  q = -99;  
+ [1,2,3,4,5,3,2,]
+Output:  [1,2,-99,4,5,-99,2]
+
+
+Write a Java Program to Find the Intersection of Two Arrays
+
