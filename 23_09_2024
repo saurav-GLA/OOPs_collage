@@ -1,0 +1,72 @@
+Object Oriented Programming (OOPs)
+
+Object oriented programming is a methodology 
+
+
+public class temp2 {
+    public static void main(String saurav[]){
+        Student s1 = new Student();
+        s1.name = "Tony";
+        s1.roll = 7;
+        s1.prin();
+
+        Student s2 = new Student();
+        s1.name = "Steve Roger";
+        s2.roll = 1;
+        s1.prin();
+    }
+}
+
+
+class Student {
+    String name;
+    int roll;
+
+    void prin() {
+        System.out.println(name);
+        System.out.println(roll);
+    }
+    
+}
+
+Hear we are creating student class to enter data of various students
+
+Fout pillers of Object Oriented Programmig
+Inheritance 
+Absttraction
+Polymorphism
+Encapsulation
+
+
+
+Polymorphism
+Constructor Overloding
+Method Overloding
+Constructor Overriding
+Method Overriding
+
+class Student {
+    String name;
+    int roll;
+
+    void Student() {
+        System.out.println("null");
+    }
+    void Student(String name){
+        System.out.println(name);
+    }
+    
+}
+
+class Student {
+    String name;
+    int roll;
+
+    void Student(char a) {
+        System.out.println("null");
+    }
+    void Student(){
+        System.out.println(name);
+    }
+    
+}
